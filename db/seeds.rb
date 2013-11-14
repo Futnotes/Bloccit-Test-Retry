@@ -1,5 +1,9 @@
 require 'faker'
  
+ Topic.destroy_all
+ Post.destroy_all
+ Comment.destroy_all
+ User.destroy_all
 #create 15 topics
 topics = []
 15.times do
