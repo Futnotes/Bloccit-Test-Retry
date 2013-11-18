@@ -1,0 +1,8 @@
+AWS_ACCESS_KEY_ID: "AKIAJTTASNWF665M24QQ"
+AWS_SECRET_ACCESS_KEY: "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"
+development:
+  SENDGRID_USERNAME: "app19338447@heroku.com"
+  SENDGRID_PASSWORD: "dbv2urfp"
+  AWS_BUCKET: bloccit-test-retry
+production:
+  AWS_BUCKET: bloccit-test-retry-production
