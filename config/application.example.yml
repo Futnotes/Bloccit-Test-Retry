@@ -6,3 +6,5 @@ development:
   AWS_BUCKET: bloccit-test-retry
 production:
   AWS_BUCKET: bloccit-test-retry-production
+  FACEBOOK_ID: 249692538519924
+  FACEBOOK_SECRET: 1e62217c4ee2e273a609ace6417ed976
