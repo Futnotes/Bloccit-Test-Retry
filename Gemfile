@@ -13,7 +13,7 @@ gem 'will_paginate', '~> 3.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development do
   gem 'sqlite3'
-  gem 'thin'
+ # gem 'thin'
 end
 
 group :production do 
