@@ -4,7 +4,9 @@ development:
   SENDGRID_USERNAME: "app19338447@heroku.com"
   SENDGRID_PASSWORD: "dbv2urfp"
   AWS_BUCKET: bloccit-test-retry
-production:
-  AWS_BUCKET: bloccit-test-retry-production
   FACEBOOK_ID: 249692538519924
   FACEBOOK_SECRET: 1e62217c4ee2e273a609ace6417ed976
+production:
+  AWS_BUCKET: bloccit-test-retry-production
+  FACEBOOK_ID: 483283325119443
+  FACEBOOK_SECRET: 80bde670c75d1dc83d93f4b743a78cc9
