@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :avatar, :provider, :uid
   has_many :posts
   has_many :comments
+  has_many :votes, dependent: :destroy
   # attr_accessible :title, :body
 
   before_create :set_member
