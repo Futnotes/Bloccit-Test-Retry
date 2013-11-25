@@ -25,7 +25,7 @@ rand(4..10).times do
 
 
   rand(5..12).times do
-    topic = Topic.first #getting the first topic here
+    topic = topics.first #getting the first topic here
     p = u.posts.create(
       topic: topic,
       title: Faker::Lorem.words(rand(1..10)).join(" "),
