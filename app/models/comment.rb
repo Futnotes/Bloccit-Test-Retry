@@ -14,3 +14,4 @@ after_create :send_favorite_emails
       end
     end
   end
+end
