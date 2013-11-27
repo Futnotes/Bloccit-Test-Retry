@@ -12,7 +12,7 @@ class TopicsController < ApplicationController
   def show
     @topic = Topic.find(params[:id])
     authorize! :read, @topic, message: "You need to be signed-in to do that."
-    @posts = @topic.posts.paginate(page: params[:page], per_page: 10)
+    @posts = @topic.posts.includes(:user).includes(:comments).paginate(page: params[:page], per_page: 10)
   end
 
   def edit
@@ -34,7 +34,7 @@ class TopicsController < ApplicationController
 
   def update
     @topic = Topic.find(params[:id])
-    authorize! :uodate, @topic, message: "You need to own the topic to do that."
+    authorize! :update, @topic, message: "You need to own the topic to do that."
     if @topic.update_attributes(params[:topic])
       redirect_to @topic
     else
